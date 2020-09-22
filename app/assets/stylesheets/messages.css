@@ -1,0 +1,76 @@
+.wrapper{
+  display: flex;
+}
+
+.sidebar{
+  width: 300px;
+  background-color: #253141;
+  height: 100vh;
+}
+
+.sidetop{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253141;
+}
+
+.username a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.createchat{
+  font-size: 10px;
+}
+
+.createchat a{
+  border: 1px solid lightblue;
+  color: deepskyblue;
+  text-decoration: none;
+  padding: 14px;
+  
+}
+
+.sidebottom{
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.room{
+  padding: 20px 0 40px;
+}
+
+.room-name a{
+  text-decoration: none;
+  color: white;
+}
+
+.main{
+  width: calc(100% - 300px);
+  background-color: #ffffff;
+}
+
+.maintop{
+  height: 100px;
+  background-color: #ffffff;
+  padding: 0 40px;
+}
+
+.mainmiddle{
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  padding: 46px 40px 0;
+}
+
+.mainbottom{
+  height: 90px;
+  background-color: #dddddd;
+  padding: 20px 40px;
+}
+
