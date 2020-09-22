@@ -16,4 +16,5 @@
 
  * {
   box-sizing: border-box;
+  /* line-height: 0; */
 } /* paddingなどを設定しても要素の大きさがwidthやheightで指定したサイズのまま変わらなくなる記述最初の＊は全ての要素に適用させるという意味 */
