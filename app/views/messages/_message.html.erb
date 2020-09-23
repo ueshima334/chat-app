@@ -1,0 +1,15 @@
+<div class="message">
+  <div class="upper-message">
+    <div class="message-user">
+      <%= message.user.name %> <%# このファイルはcolloctionオプションで@messageの要素一つ一つに対して表示させる記述なので、message.user.nameで一つのメッセージに対するusersテーブルのnameカラムの値を取得できる%>
+    </div>
+    <div class="message-date">
+      <%= l message.created_at%>
+    </div>
+  </div>
+  <div class="lower-message">
+       <div class="message-content">
+         <%= message.content %>
+       </div>
+  </div>
+</div>
