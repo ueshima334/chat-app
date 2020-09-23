@@ -6,9 +6,10 @@ class Message < ApplicationRecord
   #imageカラムは存在しないが、この記述をすることでuserモデルにimageカラムを作成せずとも画像と紐付けができる（有能）
   validates :content, presence: true、unless: :was_attached?
                                       #unless 以下の条件式に当てはまらない場合、バリデーションを適用する。
-  #was_attached?は、imageが紐づいているか？(画像が添付されているか？)を確認しているので、添付されていない場合のみ、「テキストの空欄があるとデータを保存できない」というバリデーションが適用される。                                    
+                                      #画像が添付されているか？の検証の結果が否の場合、「テキストの空欄があるとデータを保存できない」というバリデーションが適用される。                                    
   def was_attached?
     self.image.attached?
+         #image.attached?で画像が添付されているかどうかの検証ができる
   end
 
 end
