@@ -42,14 +42,15 @@
   </div>
 </div>
 <div class="mainbottom">
-  <div class="forms">
-    <div class="forminput">
-      <input class="form" placeholder="type a message"  >
-      <label class="form-image">
+  <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
+                     <%# ↑ ルーティングのネストをしており、roomとmessageは親子関係にある為、指定のチャットルームのレコード情報をセットする必要がある。 %>
+  <div class="form-input">
+    <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
+    <label class="form-image">
       <span class="image-file">画像</span>
-      <input type="file" class="hidden">
+      <%= f.file_field :image, class: 'hidden' %>
     </label>
-    </div>
-      <input class="formbtn" type="submit" value="送信">
   </div>
+  <%= f.submit '送信', class: 'form-submit' %>
+<% end %>
 </div>
