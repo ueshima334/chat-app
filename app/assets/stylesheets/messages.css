@@ -122,31 +122,34 @@
   padding: 20px 40px;
 }
 
-.forms{
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
   display: flex;
 }
 
-.forminput{
+.form-input {
   background-color: white;
-  width: 100%;
   display: flex;
-}
-
-.form{
-  padding-left: 10px;
-  border: none;
-  height: 50px;
   width: 100%;
 }
 
-.formbtn{
-  font-size: 16px;
-  padding: 0 20px;
-  color: white;
-  background-color: #38AEF0;
-  height: 50px;
+.form-message {
   border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
   margin-left: 15px;
+  padding: 0 20px;
 }
 
 .form-image {
@@ -162,5 +165,4 @@
 .hidden {
   display: none;
 }
-
 

@@ -16,6 +16,7 @@
    </div>
 </div>
 <div class="mainbottom">
+  <div class="forms">
   <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
                      <%# ↑ ルーティングのネストをしており、roomとmessageは親子関係にある為、指定のチャットルームのレコード情報をセットする必要がある。 %>
   <div class="form-input">
@@ -27,4 +28,5 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
+</div>
 </div>
